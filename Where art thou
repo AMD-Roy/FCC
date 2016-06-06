@@ -1,0 +1,17 @@
+function whereAreYou(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+ for (var sKey in source) {
+  }
+  for (var objInColl in collection) {
+    if (collection[objInColl].hasOwnProperty(sKey) && collection[objInColl][sKey] === source[sKey]) {
+        arr.push(collection[objInColl]);
+    }
+  }
+  
+  // Only change code above this line
+  return arr;
+}
+
+whereAreYou([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
